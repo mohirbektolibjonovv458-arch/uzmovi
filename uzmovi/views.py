@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from django.shortcuts import render
 # Create your views here.
 
 def navigation(request):
@@ -10,3 +10,6 @@ def footer(request):
 
 def index(request):
     return render(request,"index.html")
+
+def category(request, category_name):
+    return render(request, 'category.html')
